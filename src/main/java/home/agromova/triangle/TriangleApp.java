@@ -19,6 +19,8 @@ public class TriangleApp {
 
         if (index >= 0) {
             System.out.println("Index: " + index + " Triangle: " + triangles[index]);
+            System.out.println("Perimeter: " + triangles[index].getPerimeter());
+            System.out.println("Square: " + triangles[index].getSquare());
         } else {
             System.out.println("Треугольник не найдет");
         }

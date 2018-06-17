@@ -65,7 +65,7 @@ public class Triangle {
             return TriangleType.ISOSCELES;
         }
         if (isRightAngled()) {
-            return TriangleType.RECTANGLE;
+            return TriangleType.RIGHT_TRIANGLE;
         }
         if (isEquilateral()) {
             return TriangleType.EQUILATERAL;
