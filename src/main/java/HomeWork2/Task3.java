@@ -17,18 +17,18 @@ public class Task3 {
         Scanner sc = new Scanner(System.in);
         int pr_number = sc.nextInt();
 
-        System.out.println(num_of_interview(pr_number));
+        System.out.println(numOhInterview(pr_number));
 
 
     }
 
-    public static int num_of_interview (int pr_number) {
+    private static int numOhInterview (int pr_number) {
 
         int result;
 
         if (pr_number == 1)
             return 0;
-        result = (pr_number-1) + num_of_interview(pr_number-1);
+        result = (pr_number-1) + numOhInterview(pr_number-1);
 
         return result;
     }

@@ -35,31 +35,31 @@ public class Task1 {
         System.out.println(doLineWithoutGaps(n));
     }
 
-    public static String doLineWithoutGaps (int a) {
-        String lineWithoutGaps = "";
+    private static String doLineWithoutGaps (int a) {
+        StringBuilder lineWithoutGaps = new StringBuilder();
 
         int numberOfAsterisks = 5 + 4 * a;
 
         for (int i = 0; i < numberOfAsterisks; i++) {
-            lineWithoutGaps += "*";
+            lineWithoutGaps.append("*");
         }
-        return lineWithoutGaps;
+        return String.valueOf(lineWithoutGaps);
     }
 
-    public static String doLineWithGaps (int a) {
-        String lineWithGaps = "";
+    private static String doLineWithGaps (int a) {
+        StringBuilder lineWithGaps = new StringBuilder();
 
         int stringLength = 5 + 4 * a;
 
         for (int i = 0; i < stringLength; i++) {
             if (i == 0) {
-                lineWithGaps += "*";
+                lineWithGaps.append("*");
             } else if (i % (a + 1) == 0){
-                lineWithGaps += "*";
+                lineWithGaps.append("*");
             } else {
-                lineWithGaps += " ";
+                lineWithGaps.append(" ");
             }
         }
-        return lineWithGaps;
+        return String.valueOf(lineWithGaps);
     }
 }

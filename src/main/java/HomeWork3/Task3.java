@@ -15,14 +15,16 @@ public class Task3 {
         int arrayLength = sc.nextInt();
 
         int[] array1 = new int[arrayLength];
-        String numbers = " ";
+        StringBuilder numbers = new StringBuilder();
 
         for (int i = 0; i < arrayLength; i++) {
             Random rand = new Random();
             array1[i] = rand.nextInt();
 
             if (array1[i] % 3 == 0) {
-                numbers += array1[i] + " ";
+                numbers.append(array1[i]);
+                numbers.append(" ");
+
             }
 
         }

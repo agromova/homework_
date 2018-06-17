@@ -10,14 +10,14 @@ public class Task1 {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
 
-        String newStr = "";
+        StringBuilder newStr = new StringBuilder();
 
         for (int i = (str.length() - 1); i >= 0; i--) {
-            newStr += str.charAt(i);
+            newStr.append(str.charAt(i));
         }
         System.out.println(newStr);
 
-        if (str.compareToIgnoreCase(newStr) == 0) {
+        if (str.compareToIgnoreCase(newStr.toString()) == 0) {
             System.out.println("YES");
         } else {
             System.out.println("NO");
