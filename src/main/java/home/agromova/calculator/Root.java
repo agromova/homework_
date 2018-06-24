@@ -6,6 +6,5 @@ public class Root implements BinaryOperations{
     @Override
     public double findResultFor(double x, double y) {
         return Math.pow(x, 1.0/y);
-
     }
 }
