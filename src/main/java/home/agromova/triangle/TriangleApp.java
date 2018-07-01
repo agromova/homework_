@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TriangleApp {
     public static void main(String[] args) {
 
-        Triangle [] triangles = Triangle.generateTriangles(100000);
+        Triangle[] triangles = Triangles.generateTriangles(100000);
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         TriangleType type = TriangleType.fromString(input);
@@ -15,7 +15,7 @@ public class TriangleApp {
             System.exit(1);
         }
 
-        int index = Triangle.find(triangles, type);
+        int index = Triangles.find(triangles, type);
 
         if (index >= 0) {
             System.out.println("Index: " + index + " Triangle: " + triangles[index]);
